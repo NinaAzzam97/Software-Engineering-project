@@ -1,7 +1,13 @@
-# Software-Engineering-project
-Software Engineering project in java language 
+# OCSF Mediator Example
 
+## Structure
+Pay attention to the three modules:
+1. **client** - a simple client built using JavaFX and OCSF. We use EventBus (which implements the mediator pattern) in order to pass events between classes (in this case: between SimpleClient and PrimaryController.
+2. **server** - a simple server built using OCSF.
+3. **entities** - a shared module where all the entities of the project live.
 
-The High School Test System (HSTS) is a sophisticated computerized information system designed to streamline and centralize exam management in high schools, aiming to boost efficiency and reliability. Throughout the project, I gained hands-on experience in developing tailored information systems for educational contexts, delving into database management, user interface design, and educational technology intricacies.
-
-In addition, collaborating with a diverse team underscored the importance of effective communication, task coordination, and leveraging individual strengths. The experience not only enhanced my technical skills but also provided insights into project management and teamwork dynamics in the realm of software development.
+## Running
+1. Run Maven install **in the parent project**.
+2. Run the server using the exec:java goal in the server module.
+3. Run the client using the javafx:run goal in the client module.
+4. Press the button and see what happens!
